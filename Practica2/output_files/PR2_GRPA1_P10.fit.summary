@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Apr 02 16:37:20 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : PR2_GRPA1_P10
+Top-level Entity Name : PR2_GRPA1_P10
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 15 / 240 ( 6 % )
+Total pins : 17 / 80 ( 21 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

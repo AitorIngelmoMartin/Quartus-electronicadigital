@@ -1,0 +1,7 @@
+|Tutorial
+Y <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+C => inst3.IN0
+B => inst.IN0
+A => inst2.IN0
+
+

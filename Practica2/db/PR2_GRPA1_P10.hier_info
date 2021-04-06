@@ -1,0 +1,124 @@
+|PR2_GRPA1_P10
+SEG_A <= 7447:inst4.OA
+A[0] => comp_gt:inst2.A[0]
+A[0] => mux4bit2to1:inst.A[0]
+A[1] => comp_gt:inst2.A[1]
+A[1] => mux4bit2to1:inst.A[1]
+A[2] => comp_gt:inst2.A[2]
+A[2] => mux4bit2to1:inst.A[2]
+A[3] => comp_gt:inst2.A[3]
+A[3] => mux4bit2to1:inst.A[3]
+B[0] => comp_gt:inst2.B[0]
+B[0] => mux4bit2to1:inst.B[0]
+B[1] => comp_gt:inst2.B[1]
+B[1] => mux4bit2to1:inst.B[1]
+B[2] => comp_gt:inst2.B[2]
+B[2] => mux4bit2to1:inst.B[2]
+B[3] => comp_gt:inst2.B[3]
+B[3] => mux4bit2to1:inst.B[3]
+M_m => inst3.IN1
+SEG_B <= 7447:inst4.OB
+SEG_C <= 7447:inst4.OC
+SEG_D <= 7447:inst4.OD
+SEG_E <= 7447:inst4.OE
+SEG_F <= 7447:inst4.OF
+SEG_G <= 7447:inst4.OG
+DP <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PR2_GRPA1_P10|7447:inst4
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PR2_GRPA1_P10|7483:inst999
+C4 <= 83.DB_MAX_OUTPUT_PORT_TYPE
+B4 => 22.IN0
+B4 => 26.IN0
+A4 => 22.IN1
+A4 => 26.IN1
+B3 => 21.IN0
+B3 => 25.IN0
+A3 => 21.IN1
+A3 => 25.IN1
+B2 => 20.IN0
+B2 => 24.IN0
+A2 => 20.IN1
+A2 => 24.IN1
+B1 => 19.IN0
+B1 => 23.IN0
+A1 => 19.IN1
+A1 => 23.IN1
+C0 => 17.IN0
+S4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= 42.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PR2_GRPA1_P10|mux4bit2to1:inst
+sel => MUX_OUT.OUTPUTSELECT
+sel => MUX_OUT.OUTPUTSELECT
+sel => MUX_OUT.OUTPUTSELECT
+sel => MUX_OUT.OUTPUTSELECT
+en => MUX_OUT.OUTPUTSELECT
+en => MUX_OUT.OUTPUTSELECT
+en => MUX_OUT.OUTPUTSELECT
+en => MUX_OUT.OUTPUTSELECT
+A[0] => MUX_OUT.DATAB
+A[1] => MUX_OUT.DATAB
+A[2] => MUX_OUT.DATAB
+A[3] => MUX_OUT.DATAB
+B[0] => MUX_OUT.DATAA
+B[1] => MUX_OUT.DATAA
+B[2] => MUX_OUT.DATAA
+B[3] => MUX_OUT.DATAA
+MUX_OUT[0] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[1] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[2] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+MUX_OUT[3] <= MUX_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PR2_GRPA1_P10|comp_gt:inst2
+A[0] => LessThan0.IN4
+A[1] => LessThan0.IN3
+A[2] => LessThan0.IN2
+A[3] => LessThan0.IN1
+B[0] => LessThan0.IN8
+B[1] => LessThan0.IN7
+B[2] => LessThan0.IN6
+B[3] => LessThan0.IN5
+GT <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+En => process_0.IN1
+
+
+|PR2_GRPA1_P10|comp_gt:inst8
+A[0] => LessThan0.IN4
+A[1] => LessThan0.IN3
+A[2] => LessThan0.IN2
+A[3] => LessThan0.IN1
+B[0] => LessThan0.IN8
+B[1] => LessThan0.IN7
+B[2] => LessThan0.IN6
+B[3] => LessThan0.IN5
+GT <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+En => process_0.IN1
+
+

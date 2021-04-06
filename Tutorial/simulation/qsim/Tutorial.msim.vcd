@@ -1,0 +1,123 @@
+$comment
+	File created using the following command:
+		vcd file Tutorial.msim.vcd -direction
+$end
+$date
+	Thu Mar 05 14:30:12 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Tutorial_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C $end
+$var wire 1 $ Y $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + B~combout $end
+$var wire 1 , C~combout $end
+$var wire 1 - A~combout $end
+$var wire 1 . inst1~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+x+
+x,
+x-
+x.
+$end
+#1132
+0+
+0-
+#1163
+0,
+#5930
+1.
+#9993
+1$
+#25000
+1!
+#26132
+1-
+#50000
+1"
+0!
+#51132
+0-
+1+
+#75000
+1!
+#76132
+1-
+#100000
+1#
+0"
+0!
+#101132
+0-
+0+
+#101163
+1,
+#105910
+0.
+#109973
+0$
+#125000
+1!
+#126132
+1-
+#130910
+1.
+#134973
+1$
+#150000
+1"
+0!
+#151132
+0-
+1+
+#155999
+0.
+#160062
+0$
+#175000
+1!
+#176132
+1-
+#200000
+0#
+0"
+0!
+#201132
+0-
+0+
+#201163
+0,
+#205999
+1.
+#210062
+1$
+#1200000

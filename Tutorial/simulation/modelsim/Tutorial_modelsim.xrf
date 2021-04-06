@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Aitor/Desktop/Tutorial/Tutorial.bdf
+source_file = 1, C:/Users/Aitor/Desktop/Tutorial/db/Tutorial.cbx.xml
+design_name = Tutorial
+instance = comp, \A~I\, A, Tutorial, 1
+instance = comp, \C~I\, C, Tutorial, 1
+instance = comp, \B~I\, B, Tutorial, 1
+instance = comp, \Y~I\, Y, Tutorial, 1

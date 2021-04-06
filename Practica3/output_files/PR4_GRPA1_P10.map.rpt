@@ -1,0 +1,303 @@
+Analysis & Synthesis report for PR4_GRPA1_P10
+Fri May 08 12:12:04 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: prescaler:inst|prescaler_comparator:inst
+ 10. Parameter Settings for User Entity Instance: prescaler:inst|prescaler_counter:inst2
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri May 08 12:12:04 2020       ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; PR4_GRPA1_P10                               ;
+; Top-level Entity Name       ; PR4_GRPA1_P10                               ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 67                                          ;
+; Total pins                  ; 19                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; PR4_GRPA1_P10      ; PR4_GRPA1_P10      ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; counter_bcd.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aitor/Desktop/Quartus/Practica3/counter_bcd.bdf           ;         ;
+; prescaler_counter.vhd            ; yes             ; User VHDL File                     ; C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler_counter.vhd     ;         ;
+; prescaler_comparator.vhd         ; yes             ; User VHDL File                     ; C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler_comparator.vhd  ;         ;
+; prescaler.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler.bdf             ;         ;
+; flipflop_D.vhd                   ; yes             ; User VHDL File                     ; C:/Users/Aitor/Desktop/Quartus/Practica3/flipflop_D.vhd            ;         ;
+; flipflop_T.vhd                   ; yes             ; User VHDL File                     ; C:/Users/Aitor/Desktop/Quartus/Practica3/flipflop_T.vhd            ;         ;
+; Stop_go.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aitor/Desktop/Quartus/Practica3/Stop_go.bdf               ;         ;
+; PR4_GRPA1_P10.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aitor/Desktop/Quartus/Practica3/PR4_GRPA1_P10.bdf         ;         ;
+; 7447.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/7447.bdf  ;         ;
+; 74162.bdf                        ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74162.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 67    ;
+;     -- Combinational with no register       ; 29    ;
+;     -- Register only                        ; 1     ;
+;     -- Combinational with a register        ; 37    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 8     ;
+;     -- 2 input functions                    ; 34    ;
+;     -- 1 input functions                    ; 1     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 36    ;
+;     -- arithmetic mode                      ; 31    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 32    ;
+;     -- asynchronous clear/load mode         ; 2     ;
+;                                             ;       ;
+; Total registers                             ; 38    ;
+; Total logic cells in carry chains           ; 32    ;
+; I/O pins                                    ; 19    ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 38    ;
+; Total fan-out                               ; 269   ;
+; Average fan-out                             ; 3.13  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                    ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name          ; Library Name ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+----------------------+--------------+
+; |PR4_GRPA1_P10                    ; 67 (0)      ; 38           ; 0          ; 19   ; 0            ; 29 (0)       ; 1 (0)             ; 37 (0)           ; 32 (0)          ; 0 (0)      ; |PR4_GRPA1_P10                                          ; PR4_GRPA1_P10        ; work         ;
+;    |7447:inst4|                   ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|7447:inst4                               ; 7447                 ; work         ;
+;    |Stop_go:inst2|                ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|Stop_go:inst2                            ; Stop_go              ; work         ;
+;       |flipflop_D:inst|           ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|Stop_go:inst2|flipflop_D:inst            ; flipflop_D           ; work         ;
+;       |flipflop_T:inst2|          ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|Stop_go:inst2|flipflop_T:inst2           ; flipflop_T           ; work         ;
+;    |counter_bcd:inst6|            ; 15 (0)      ; 4            ; 0          ; 0    ; 0            ; 11 (0)       ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|counter_bcd:inst6                        ; counter_bcd          ; work         ;
+;       |74162:inst|                ; 15 (15)     ; 4            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|counter_bcd:inst6|74162:inst             ; 74162                ; work         ;
+;    |prescaler:inst|               ; 43 (1)      ; 32           ; 0          ; 0    ; 0            ; 11 (1)       ; 0 (0)             ; 32 (0)           ; 32 (0)          ; 0 (0)      ; |PR4_GRPA1_P10|prescaler:inst                           ; prescaler            ; work         ;
+;       |prescaler_comparator:inst| ; 10 (10)     ; 0            ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |PR4_GRPA1_P10|prescaler:inst|prescaler_comparator:inst ; prescaler_comparator ; work         ;
+;       |prescaler_counter:inst2|   ; 32 (32)     ; 32           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 32 (32)          ; 32 (32)         ; 0 (0)      ; |PR4_GRPA1_P10|prescaler:inst|prescaler_counter:inst2   ; prescaler_counter    ; work         ;
++-----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 38    ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: prescaler:inst|prescaler_comparator:inst ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; w              ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: prescaler:inst|prescaler_counter:inst2 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri May 08 12:11:34 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PR4_GRPA1_P10 -c PR4_GRPA1_P10
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file counter_bcd.bdf
+    Info (12023): Found entity 1: counter_bcd
+Info (12021): Found 2 design units, including 1 entities, in source file prescaler_counter.vhd
+    Info (12022): Found design unit 1: prescaler_counter-RTL File: C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler_counter.vhd Line: 17
+    Info (12023): Found entity 1: prescaler_counter File: C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler_counter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file prescaler_comparator.vhd
+    Info (12022): Found design unit 1: prescaler_comparator-rtl File: C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler_comparator.vhd Line: 13
+    Info (12023): Found entity 1: prescaler_comparator File: C:/Users/Aitor/Desktop/Quartus/Practica3/prescaler_comparator.vhd Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file prescaler.bdf
+    Info (12023): Found entity 1: prescaler
+Info (12021): Found 2 design units, including 1 entities, in source file flipflop_d.vhd
+    Info (12022): Found design unit 1: flipflop_D-RTL File: C:/Users/Aitor/Desktop/Quartus/Practica3/flipflop_D.vhd Line: 13
+    Info (12023): Found entity 1: flipflop_D File: C:/Users/Aitor/Desktop/Quartus/Practica3/flipflop_D.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file flipflop_t.vhd
+    Info (12022): Found design unit 1: flipflop_T-RTL File: C:/Users/Aitor/Desktop/Quartus/Practica3/flipflop_T.vhd Line: 13
+    Info (12023): Found entity 1: flipflop_T File: C:/Users/Aitor/Desktop/Quartus/Practica3/flipflop_T.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file stop_go.bdf
+    Info (12023): Found entity 1: Stop_go
+Info (12021): Found 1 design units, including 1 entities, in source file pr4_grpa1_p10.bdf
+    Info (12023): Found entity 1: PR4_GRPA1_P10
+Info (12127): Elaborating entity "PR4_GRPA1_P10" for the top level hierarchy
+Info (12128): Elaborating entity "7447" for hierarchy "7447:inst4"
+Info (12130): Elaborated megafunction instantiation "7447:inst4"
+Info (12128): Elaborating entity "counter_bcd" for hierarchy "counter_bcd:inst6"
+Info (12128): Elaborating entity "74162" for hierarchy "counter_bcd:inst6|74162:inst"
+Info (12130): Elaborated megafunction instantiation "counter_bcd:inst6|74162:inst"
+Info (12128): Elaborating entity "prescaler" for hierarchy "prescaler:inst"
+Info (12128): Elaborating entity "prescaler_comparator" for hierarchy "prescaler:inst|prescaler_comparator:inst"
+Info (12128): Elaborating entity "prescaler_counter" for hierarchy "prescaler:inst|prescaler_counter:inst2"
+Info (12128): Elaborating entity "Stop_go" for hierarchy "Stop_go:inst2"
+Info (12128): Elaborating entity "flipflop_T" for hierarchy "Stop_go:inst2|flipflop_T:inst2"
+Info (12128): Elaborating entity "flipflop_D" for hierarchy "Stop_go:inst2|flipflop_D:inst"
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 67 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 620 megabytes
+    Info: Processing ended: Fri May 08 12:12:04 2020
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:01:02
+
+
